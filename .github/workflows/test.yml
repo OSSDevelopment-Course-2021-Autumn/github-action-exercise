@@ -44,7 +44,7 @@ jobs:
       
       - name: Check
         run: |
-          cd ../../templates/frontend
+          cd ./templates/frontend
           npm i
           npm run dev &
           cd ../../
