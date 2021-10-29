@@ -50,6 +50,6 @@ jobs:
           cd ../../
           python3 index.py &
           ret=$(curl -i http://localhost:8080/#/ | grep "200 OK")
-	  [ -z "$ret2" ];echo $?
+          [ -z "$ret2" ];echo $?
 
           
