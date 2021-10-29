@@ -37,7 +37,7 @@ jobs:
       
       - name: Install Python Independencies
         run: |
-          python3 install flask 
+          python3 install Flask 
           python3 install markupsafe
           python3 install flask-cors
           python3 install pymongo
