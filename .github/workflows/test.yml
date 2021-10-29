@@ -42,12 +42,15 @@ jobs:
           pip3 install flask-cors
           pip3 install pymongo
       
-      - name: Check
+      - name: Check0
         run: |
           cd ./templates/frontend
           npm i
           npm run dev &
           cd ../../
+          
+      - name: Check1 
+        run: |
           python3 index.py &
           ret=$(curl -i http://localhost:8080/#/ | grep "200 OK")
           [ -z "$ret2" ];echo $?
